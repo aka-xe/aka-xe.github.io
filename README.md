@@ -28,7 +28,7 @@ We welcome all contributions, whether it's for improving the redirect service, a
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](aka-xe.github.io/license.txt).
 
 ---
 
