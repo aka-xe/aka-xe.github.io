@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>aka-xe Example Page</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      padding: 20px;
+    }
+
+    pre {
+      background-color: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00bfff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #009acd;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>aka-xe Example Redirect Page</h1>
+  <p>This is an example of how a redirect page works on <strong>aka-xe.github.io</strong>.</p>
+
+  <h2>Sample Redirect Code:</h2>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta http-equiv="refresh" content="0; url=https://example.com" /&gt;
+    &lt;title&gt;Redirecting...&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Redirecting...&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <button onclick="window.location.href='https://example.com'">Redirect</button>
+
+</body>
+</html>
