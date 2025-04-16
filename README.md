@@ -33,4 +33,4 @@ This project is licensed under the [MIT License](https://aka-xe.github.io/licens
 
 > Note: This project serves as a link shortening tool for the UXidone platform, simplifying navigation for users.
 
-**Last updated:** [Insert Date]
+**Last updated:** [2025]
