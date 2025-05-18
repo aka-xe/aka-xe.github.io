@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5; url='https://uxidone.github.io/articles/posts/mcserverkick/'">
+    <title>Redirecting... | Uxidone Corp</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --accent: #10b981;
+            --text: #1f2937;
+            --bg: #f9fafb;
+        }
+        .dark-mode {
+            --primary: #818cf8;
+            --primary-dark: #6366f1;
+            --accent: #34d399;
+            --text: #e5e7eb;
+            --bg: #111827;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .redirect-container {
+            max-width: 500px;
+            padding: 2rem;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 1;
+        }
+        .countdown {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+        .redirect-info {
+            margin: 1rem 0;
+            color: var(--text);
+        }
+        .redirect-url {
+            font-weight: bold;
+            color: var(--primary);
+            word-break: break-all;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 3px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            width: 0%;
+            background: var(--primary);
+            animation: progress 5s linear forwards;
+        }
+        @keyframes progress {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+        .manual-link {
+            margin-top: 1rem;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Futuristic background effects */
+        .grid-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(79, 70, 229, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(79, 70, 229, 0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .corner-dots {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 10px 10px, var(--primary) 2px, transparent 3px),
+                radial-gradient(circle at calc(100% - 10px) 10px, var(--primary) 2px, transparent 3px),
+                radial-gradient(circle at 10px calc(100% - 10px), var(--primary) 2px, transparent 3px),
+                radial-gradient(circle at calc(100% - 10px) calc(100% - 10px), var(--primary) 2px, transparent 3px);
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-lines"></div>
+    <div class="corner-dots"></div>
+    
+    <div class="logo">Uxidone Corp</div>
+    
+    <div class="redirect-container">
+        <div class="countdown" id="countdown">5</div>
+        <div class="redirect-info">
+            Redirecting to:<br>
+            <span class="redirect-url">uxidone.github.io/articles/posts/mcserverkick</span>
+        </div>
+        
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        
+        <div class="manual-link">
+            <a href="https://uxidone.github.io/articles/posts/mcserverkick/">Click here if not redirected automatically</a>
+        </div>
+    </div>
+
+    <!-- Cool UCRS Badge -->
+    <div id="ucrs-badge" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; cursor: pointer;">
+      <svg width="180" height="80" viewBox="0 0 180 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 10px rgba(79, 70, 229, 0.5));">
+        <!-- Glowing border -->
+        <rect width="180" height="80" rx="10" fill="url(#paint0_linear)" fill-opacity="0.15"/>
+        <rect x="1" y="1" width="178" height="78" rx="9" stroke="url(#paint1_linear)" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 4"/>
+        
+        <!-- Animated scan line -->
+        <rect x="10" y="15" width="160" height="2" fill="#4F46E5">
+          <animate attributeName="y" values="15;65;15" dur="4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+        </rect>
+        
+        <!-- Main content -->
+        <rect x="10" y="20" width="160" height="40" rx="5" fill="black" fill-opacity="0.4"/>
+        
+        <!-- Text -->
+        <text fill="white" font-family="'Courier New', monospace" font-size="8" font-weight="bold" letter-spacing="2">
+          <tspan x="20" y="35">SECURE REDIRECTION</tspan>
+        </text>
+        <text fill="#4F46E5" font-family="'Courier New', monospace" font-size="6" letter-spacing="1">
+          <tspan x="20" y="45">CERTIFIED BY</tspan>
+        </text>
+        <text fill="white" font-family="'Courier New', monospace" font-size="12" font-weight="bold" letter-spacing="1">
+          <tspan x="20" y="60">UCRS v3.2</tspan>
+        </text>
+        
+        <!-- Holographic emblem -->
+        <circle cx="140" cy="40" r="15" fill="none" stroke="url(#paint2_linear)" stroke-width="2">
+          <animateTransform attributeName="transform" type="rotate" from="0 140 40" to="360 140 40" dur="8s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M140 25L145 35L135 35L140 25Z" fill="#4F46E5">
+          <animateTransform attributeName="transform" type="rotate" from="0 140 40" to="360 140 40" dur="8s" repeatCount="indefinite"/>
+        </path>
+        
+        <!-- Glow effects -->
+        <defs>
+          <linearGradient id="paint0_linear" x1="0" y1="0" x2="180" y2="80" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F46E5"/>
+            <stop offset="1" stop-color="#10B981"/>
+          </linearGradient>
+          <linearGradient id="paint1_linear" x1="0" y1="0" x2="180" y2="80" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F46E5"/>
+            <stop offset="0.5" stop-color="#10B981"/>
+            <stop offset="1" stop-color="#4F46E5"/>
+          </linearGradient>
+          <linearGradient id="paint2_linear" x1="140" y1="25" x2="140" y2="55" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F46E5" stop-opacity="0"/>
+            <stop offset="0.5" stop-color="#4F46E5"/>
+            <stop offset="1" stop-color="#4F46E5" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <script>
+        // Countdown timer
+        let seconds = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        }
+
+        // UCRS Badge interaction
+        const badge = document.getElementById('ucrs-badge');
+        badge.addEventListener('mouseenter', () => {
+            badge.style.filter = 'drop-shadow(0 0 15px rgba(79, 70, 229, 0.8))';
+            badge.style.transform = 'scale(1.05)';
+            badge.style.transition = 'all 0.3s ease';
+        });
+        badge.addEventListener('mouseleave', () => {
+            badge.style.filter = 'drop-shadow(0 0 10px rgba(79, 70, 229, 0.5))';
+            badge.style.transform = 'scale(1)';
+        });
+        
+        badge.addEventListener('click', () => {
+            const verification = document.createElement('div');
+            verification.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(0,0,0,0.9);
+                    color: white;
+                    padding: 20px;
+                    border-radius: 10px;
+                    border: 2px solid #4F46E5;
+                    z-index: 10000;
+                    text-align: center;
+                    font-family: 'Courier New', monospace;
+                    max-width: 300px;
+                ">
+                    <h3 style="color: #4F46E5; margin-top: 0;">UCRS VERIFICATION</h3>
+                    <p>This redirection is officially certified by Uxidone Corporation's secure routing system.</p>
+                    <p style="font-size: 0.8em; color: #10B981;">Security Token: UXID-CRS-${Math.random().toString(36).substr(2, 8).toUpperCase()}</p>
+                    <button onclick="this.parentNode.remove()" style="
+                        background: #4F46E5;
+                        color: white;
+                        border: none;
+                        padding: 8px 16px;
+                        margin-top: 10px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    ">ACKNOWLEDGE</button>
+                </div>
+            `;
+            document.body.appendChild(verification);
+        });
+    </script>
+</body>
+</html>
